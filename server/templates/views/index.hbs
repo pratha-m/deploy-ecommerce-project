@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  type="text/css" href="index.css">
+</head>
+<body>
+<div class="allCotainer" id="allCotainer">
+<!-- navigation bar starts -->
+{{>navbar}}
+<!-- navigation bar ends -->
+<!-- image slider starts -->
+<div class="ImageSliderBox">
+    <div class="sliderButtonsContainer">
+        <div class="sliderButtonsBox">
+            <div class="eachButton"></div>
+            <div class="eachButton"></div>
+            <div class="eachButton"></div>
+            <div class="eachButton"></div>
+        </div>
+    </div>
+</div>
+<!-- image slider ends -->
+
+<!-- all products container starts-->
+<div class="productsContainer">
+  <div class="eachItem">
+     <div class="eachItemInnerDiv">
+        <div class="eachItemImageDiv"></div> 
+        <div class="eachItemOtherTextDiv">
+            <div class="productName">Britania Cake</div>
+            {{!-- <div class="stars">
+                <div class="eachStar star1"></div>
+                <div class="eachStar star2"></div>
+                <div class="eachStar star3"></div>
+                <div class="eachStar star4"></div>
+                <div class="eachStar star5"></div>
+            </div> --}}
+            <div class="dealOfTheDayDiv">
+              <div class="dealOfTheDay">Deal Of The Day</div>
+            </div>
+            <div class="pricesDiv">
+                <div class="showPrice">Rs:400</div>
+                <div class="cutPrice">Rs:1000</div>
+                <div class="savePrice">Save Rs:600</div>
+            </div>
+            <div class="freeDeliveryDiv">Free Delivery</div>
+        </div> 
+     </div>
+  </div>
+<div class="gapContainer"></div>
+</div>
+<!-- all products container starts-->
+<div class="footer">&copy;&nbsp;2022 Copyright : SnackTime.com</div>
+</div>   
+</body>
+</html>

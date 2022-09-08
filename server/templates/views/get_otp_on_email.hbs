@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create_account_verification_otp_on_email</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding:0;
+}    
+.createAccountOtpFormContainer{
+    height:100vh;
+    width:100%;
+    background-color:rgb(190, 190, 182);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}    
+.formDiv{
+    height:35vh;
+    width:380px;
+    background-color:#d7d7d7;
+    border-radius:10px;
+}
+.otpTextDiv{
+    height:30%;
+    /* background-color: rgb(153, 119, 119); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+}
+.text1{
+    font-size:20px;
+}
+.text2EmailOfPerson a{
+    text-decoration: none;
+    font-size:18px;
+}
+.otpFormDiv{
+    height:70%;
+    width:100%;
+    /* background-color:brown; */
+}
+.otpForm{
+    height:100%;
+    width:100%;
+    /* background-color: chartreuse; */
+}
+.otpInputDiv{
+    height:45%;
+    width:100%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.otpInput{
+    height:70%;
+    width:93%;
+    /* background-color: red; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.otpInputTag{
+    height:100%;
+    width:100%;
+    font-size:25px;
+    border-radius:10px;
+    border:none;
+}
+.otpInputTag:focus{
+    outline: none;
+}
+.otpInputTag:hover{
+    border-style: solid;
+    border-color:gold;
+    box-shadow:1px 1px 5px gold;
+}
+.createAccountButtonDiv{
+    height:50%;
+    width:100%;
+    /* background-color:coral; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createAccountButton{
+    height:100%;
+    width:100%;
+    /* background-color:pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createAccountButtonTag{
+    height:65%;
+    width:50%;
+    border-radius:50px;
+    border: none;
+    font-size:20px;
+    color: white;
+    background-color:#506a50;
+    cursor: pointer;
+}
+.createAccountButtonTag:hover{
+    background-color:#5f865f;
+}
+
+/* media queries */
+@media(max-width:393px){
+    .formDiv{
+    height:35vh;
+    width:340px;
+    background-color:#d7d7d7;
+    border-radius:10px;
+    }
+}
+@media(max-width:355px){
+    .formDiv{
+    height:35vh;
+    width:300px;
+    background-color:#d7d7d7;
+    border-radius:10px;
+    }
+    .createAccountButtonTag{
+    height:65%;
+    width:55%;
+    border-radius:50px;
+    border: none;
+    font-size:20px;
+    color: white;
+    background-color:#506a50;
+    cursor: pointer;
+    }
+}
+@media(max-width:311px){
+    .formDiv{
+    width:270px;
+    }
+    .createAccountButtonTag{
+    font-size:18px;
+    }
+    .text1{
+    font-size:17px;
+    }
+    .text2EmailOfPerson a{
+    font-size:14px;
+    }
+}
+@media(max-width:274px){
+    .formDiv{
+    width:240px;
+    }
+    .createAccountButtonTag{
+    font-size:15px;
+    }
+    .text1{
+    font-size:14px;
+    }
+    .text2EmailOfPerson a{
+    font-size:12px;
+    }
+}
+
+</style>    
+</head>
+<body>
+    <div class="createAccountOtpFormContainer">
+        <div class="formDiv">
+           <div class="otpTextDiv">
+                <div class="text1">You will get the otp on Email:</div>
+                <div class="text2EmailOfPerson"><a href="#">abcd123@gmail.com</a></div>
+           </div>
+           <div class="otpFormDiv">
+               <form class="otpForm" method="POST" action="/get_otp_on_email">
+                       <div class="otpInputDiv"><div class="otpInput"><input type="text" name="otp" placeholder="Enter Otp" class="otpInputTag"></div></div>  
+                       <div class="createAccountButtonDiv"><div class="createAccountButton"><input type="submit" value="Continue" class="createAccountButtonTag"></div></div>
+               </form>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

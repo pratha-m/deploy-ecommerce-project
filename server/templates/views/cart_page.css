@@ -1,0 +1,34 @@
+.cartPageContainer{
+  background-color: blue;
+  height: max-content;
+  width: 97%;
+  display: flex;
+  position:relative;
+  background-color: #f1f3f6;
+  justify-content: space-around;
+  padding:20px 10px;
+}
+.shoppingCartProducts{
+   height: max-content; 
+   width:75%;  
+   background-color: grey;
+   min-height:70vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.billDetails{
+   position:sticky;
+   top:25vh;
+   max-height:50vh;
+   width:20%;
+   /* background-color:red; */
+  background-color: white;
+  box-shadow:1px 1px 2px black;
+}
+.cartProductContainer{
+  height:150px;
+  width:80%;
+  background-color: white;
+  margin: 10px;
+}

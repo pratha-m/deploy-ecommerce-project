@@ -1,0 +1,91 @@
+.myWishlistPage{
+    display: flex;
+    min-height:65vh;
+    max-height:max-content;
+    width:100%;
+    /* background-color: aliceblue; */
+}
+.left{
+    width:10%;
+    /* background-color:red; */
+    background-color:rgb(232 235 240);
+}
+.center{
+   width: 80%;
+   /* background-color: green; */
+   background-color: rgb(232 235 240);
+}
+.right{
+    width: 10%;
+    /* background-color:blue; */
+    background-color:rgb(232 235 240);
+}
+.myWishlistText{
+    position: relative;
+    height: 10vh;
+    left: 8px;
+    width: 76.5%;
+    font-size:25px;
+    /* background-color: green; */
+    background-color: white;
+    box-shadow: 1px 1px 2px black;
+    display: flex;
+    align-items: center;   
+    padding-left:40px;
+}
+.allMyWishlistsContainer{
+    width:100%;
+    min-height: 55vh;
+    height:max-content;
+    /* background-color:grey; */
+    background-color:rgb(232 235 240);
+    overflow-y: scroll;
+}
+.allMyWishlistsContainer::-webkit-scrollbar {
+    display: none;
+}
+.allMyWishlistsContainer{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.imageAndStaticTextForWishlist{
+  height:20vh;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageContainer{
+    height:100%;
+    flex: 1;
+    /* background-color: blue; */
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:10px;
+    padding-right:10px;
+}
+.productDetailsTextContainer{
+    height: 100%;
+    flex: 5;
+    /* background-color: orange; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.cartProductAllButtonsForWishlist{
+    height: 100%;
+    width:60px;
+    /* background-color: blue; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../public/images/delete\ icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:65% 25%;
+    cursor: pointer;
+}

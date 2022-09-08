@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create_account</title>
+    <link rel="stylesheet" href="index.css">  <!-- navigation bar css  -->  
+<style>
+.createAccountFormContainer{
+    height:100vh;
+    width: 100%;
+    background-color: #8d9494;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createAccountTextAndFormDiv{
+    height:90vh;
+    width:100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+.createAccountText{
+    height:20%;
+    width:100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 50px;
+}
+
+.createAccountFormDiv{
+    height: 80%;
+    width:100%;
+    /* background-color: chartreuse; */
+}
+.eachInfoDiv{
+    height:18%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+    margin-top:0.5%; 
+}
+.continueButtonDiv{  
+    height:18%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    /* background-color: gray; */
+    margin-top:0.5%; 
+}
+.ifAlreadyAccountExists{
+    display: flex;
+    align-items: center;
+}
+.ifAlreadyAccountExistsText{
+    font-size: 24px;
+}
+.ifAlreadyAccountExistsLink a{
+    font-size: 20px;
+    text-decoration:none;
+    margin:10px;
+}
+.inputTextDiv{
+ height:90%;
+ width:300px;
+ /* background-color: orange; */
+ display: flex;
+ align-items: center;
+ justify-content:start;
+ font-size:2rem;
+ color: black;
+}
+.inputDiv{
+  height:90%;
+ width:60%;
+ /* background-color:brown; */
+ display: flex;
+ align-items: center;
+ justify-content:center;
+}
+.inputDiv .input{
+    height:65%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+}
+.inputDiv .input input{
+    height: 100%;
+    width:100%;
+    font-size:25px;
+    border-radius:10px;
+    border: none;
+}
+.inputDiv .passwordInput input{
+    width:97%;
+    border-radius:10px 0px 0px 10px;
+}
+.showPasswordIconDiv{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: white;
+    background-image:url(images/show.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width:40px;
+    height:100%;
+    border-radius:0px 10px 10px 0px;
+    cursor: pointer;
+}
+.inputDiv .input input:focus{
+    outline: none;
+}
+.inputDiv .input:hover{
+    border-style:solid;
+    border-color:gold;
+    box-shadow:0.5px 0.5px 25px rgb(231, 200, 23);
+    border-radius:10px;
+}
+.continueButtonOutDiv{
+  height:70%;
+  width:160px;
+  background-color:green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:50px;
+  color: white;
+  cursor:pointer;
+  font-size:20px;
+}
+.continueButtonOutDiv:hover{
+    opacity:0.8;
+    font-weight: bold;
+}
+.continueButton{
+    height:100%;
+  width:100%;
+  background-color:green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:50px;
+  color: white;
+  cursor:pointer;
+  font-size:20px;
+  border: none;
+}
+@media(max-width:760px){
+    .createAccountText{
+       font-size: 50px;
+    }
+    .inputTextDiv{
+        height:90%;
+        width:180px;
+        font-size:1.2rem;
+     }
+     .continueButtonOutDiv{
+      height:70%;
+        width:80px;
+         border-radius:30px;
+        font-size:14px;
+     }
+     .ifAlreadyAccountExistsText{
+         font-size: 17px;
+     }
+     .ifAlreadyAccountExistsLink a{
+         font-size: 16px;
+         margin:5px;
+     }
+     .continueButton{
+         height:100%;
+         font-size:16px;
+     }
+}
+@media(max-width:523px){
+    .createAccountText{
+       font-size: 50px;
+    }
+    .inputTextDiv{
+        height:90%;
+        width:150px;
+        font-size:1rem;
+     }
+     .continueButton{
+         height:100%;
+         font-size:13px;
+     }
+}
+@media(max-width:409px){
+    .createAccountText{
+       font-size: 40px;
+    }
+    .inputTextDiv{
+        height:90%;
+        width:120px;
+        font-size:0.8rem;
+     }
+     .continueButtonOutDiv{
+         height:60%;
+         width:70px;
+         border-radius:20px;
+        font-size:9px;
+     }
+     .continueButton{
+         height:100%;
+         font-size:13px;
+     }
+     .ifAlreadyAccountExistsText{
+         font-size: 10px;
+     }
+     .ifAlreadyAccountExistsLink a{
+         font-size: 9px;
+         margin:5px;
+     }
+}
+@media(max-width:317px){
+    .createAccountText{
+       font-size: 30px;
+    }
+    .inputTextDiv{
+        height:90%;
+        width:110px;
+        font-size:0.7rem;
+     }
+}
+@media(max-width:290px){
+    .createAccountText{
+       font-size: 30px;
+    }
+    .inputTextDiv{
+        height:90%;
+        width:100px;
+        font-size:0.6rem;
+     }
+}
+</style>    
+</head>
+<body>
+   <div class="createAccountFormContainer">
+       <div class="createAccountTextAndFormDiv">
+            <div class="createAccountText">Create Account</div>
+            <form action="/create_account" method="POST" style="height:100vh">
+            <div class="createAccountFormDiv">
+                    <div class="eachInfoDiv nameDiv"><div class="inputTextDiv">Name:</div><div class="inputDiv"><div class="input"><input type="text" name="name" ></div></div></div>
+                    <div class="eachInfoDiv phoneNumberDiv"><div class="inputTextDiv">Email:</div><div class="inputDiv"><div class="input"><input type="text" name="email"></div></div></div>
+                    <div class="eachInfoDiv phoneNumberDiv"><div class="inputTextDiv">Roll No:</div><div class="inputDiv"><div class="input"><input type="text" name="rollno"></div></div></div>
+                    <div class="eachInfoDiv passwordDiv"><div class="inputTextDiv">Password:</div><div class="inputDiv"><div class="input passwordInput"><input type="password" name="password" ><div class="showPasswordIconDiv"></div></div></div></div>
+                    <div class="eachInfoDiv passwordDiv"><div class="inputTextDiv">Confirm Password:</div><div class="inputDiv"><div class="input passwordInput"><input type="password" name="confirmpassword" ><div class="showPasswordIconDiv"></div></div></div></div>
+                    <div class="eachInfoDiv continueButtonDiv">
+                    <div class="ifAlreadyAccountExists">
+                        <div class="ifAlreadyAccountExistsText">or If you already have account</div>
+                        <div class="ifAlreadyAccountExistsLink"><a href="/login">Sign In</a></div>
+                    </div>
+                    <div class="continueButtonOutDiv"><button type="submit" class="continueButton">Submit</button></div></div>
+            </div>
+            </form>
+       </div> 
+   </div> 
+</body>
+</html>

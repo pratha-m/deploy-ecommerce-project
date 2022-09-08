@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="each_product_page.css">
+</head>
+<form>
+    {{>navbar}}
+    <div class="productAndItsInfoContainer">
+    <form action="/each_product_page" method="GET">
+        <div class="productContainer">
+            <div class="productImageAndGallery">
+                <div class="productGallery">
+                    <div class="eachImagePositionContainer eachImagePositionContainer1" id="eachImagePositionContainer1"></div>
+                    <div class="eachImagePositionContainer eachImagePositionContainer2" id="eachImagePositionContainer2"></div>
+                    <div class="eachImagePositionContainer eachImagePositionContainer3" id="eachImagePositionContainer3"></div>
+                    <div class="eachImagePositionContainer eachImagePositionContainer4" id="eachImagePositionContainer4"></div>
+                    <div class="eachImagePositionContainer eachImagePositionContainer5" id="eachImagePositionContainer5"></div>
+                </div>
+                <div class="productImage" id="productImage">
+                    <div id="cursorDiv"></div>
+                </div>
+                <div class="productImageZoomerDiv" id="productImageZoomerDiv">
+                        <img src="" class="productZoomedImage" id="productZoomedImage">
+                </div>
+            </div>
+            <div class="buyAndAddToCartButtonContainer">
+                <div class="buttonContainer"><button class="buyNowButton button">Buy Now</button></div>
+                <div class="buttonContainer"><button class="addToCartButton button">Add To Cart</button></div>
+            </div>
+        </div>
+        <div class="productInfoContainer">
+            <div class="infoProductCompany">Haldiram</div>
+            <div class="infoProductName">kurkure</div>
+            <div class="infoProductPrice">Rs 10</div>
+            <div class="infoProductCompanyLogo"></div>
+            <div class="infoProductDeliveryDetails">
+                <div class="noOfItemsAndTextDiv">
+                    <div class="noOfItemsText">Products :</div>
+                    <div class="noOfItemsDiv"><input min=1 class="noOfItemsInput" type="number"></div>
+                </div>
+               
+            </div>
+            <div class="infoProductDetailsOption">
+                <div class="productInfoTextAndIcon">
+                  <div class="productInfoText">Product Info</div>
+                  <div class="productInfoIcon"></div>
+                </div>
+                <div class="infoProductDetails">
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Brand</div>
+                        <div class="infoProductValue">Kurkure</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Model Name</div>
+                        <div class="infoProductValue">Masala Munch</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Quantity</div>
+                        <div class="infoProductValue">81g</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Type</div>
+                        <div class="infoProductValue">Namkeen</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Flavor</div>
+                        <div class="infoProductValue">Masala</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Taste</div>
+                        <div class="infoProductValue">Spicy</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Organic</div>
+                        <div class="infoProductValue">No</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Added Preservatives</div>
+                        <div class="infoProductValue">yes</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Food prefernce</div>
+                        <div class="infoProductValue">Vegetarian</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Maximum shelf time</div>
+                        <div class="infoProductValue">4 Months</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Container Type</div>
+                        <div class="infoProductValue">Pouch</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Gournet</div>
+                        <div class="infoProductValue">No</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Nutrient Content</div>
+                        <div class="infoProductValue">NA</div>
+                    </div>
+                    <div class="infoProductDetailsRow">
+                        <div class="infoProductKey">Ingredient</div>
+                        <div class="infoProductValue">NA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    {{!-- related products container starts --}}
+    <div class="relatedProductsContainer">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto similique tenetur et est ea placeat, vitae odio sequi qui. Expedita neque, blanditiis illo at accusantium sunt itaque rem necessitatibus alias vel ea voluptatum, nobis amet ut facilis vitae deserunt optio odio obcaecati. Consectetur ipsam asperiores, inventore quam aspernatur neque qui quaerat iure provident numquam voluptatum impedit, consequatur tenetur optio sed maxime? Quas aperiam praesentium earum repellendus quo itaque, ut minus similique fugiat voluptatibus quod architecto recusandae magni rerum doloribus ducimus nulla consequuntur quisquam fuga ipsum assumenda? Id magni blanditiis officiis ratione sed doloremque error nihil, aperiam, suscipit fugit sapiente reprehenderit?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto similique tenetur et est ea placeat, vitae odio sequi qui. Expedita neque, blanditiis illo at accusantium sunt itaque rem necessitatibus alias vel ea voluptatum, nobis amet ut facilis vitae deserunt optio odio obcaecati. Consectetur ipsam asperiores, inventore quam aspernatur neque qui quaerat iure provident numquam voluptatum impedit, consequatur tenetur optio sed maxime? Quas aperiam praesentium earum repellendus quo itaque, ut minus similique fugiat voluptatibus quod architecto recusandae magni rerum doloribus ducimus nulla consequuntur quisquam fuga ipsum assumenda? Id magni blanditiis officiis ratione sed doloremque error nihil, aperiam, suscipit fugit sapiente reprehenderit?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto similique tenetur et est ea placeat, vitae odio sequi qui. Expedita neque, blanditiis illo at accusantium sunt itaque rem necessitatibus alias vel ea voluptatum, nobis amet ut facilis vitae deserunt optio odio obcaecati. Consectetur ipsam asperiores, inventore quam aspernatur neque qui quaerat iure provident numquam voluptatum impedit, consequatur tenetur optio sed maxime? Quas aperiam praesentium earum repellendus quo itaque, ut minus similique fugiat voluptatibus quod architecto recusandae magni rerum doloribus ducimus nulla consequuntur quisquam fuga ipsum assumenda? Id magni blanditiis officiis ratione sed doloremque error nihil, aperiam, suscipit fugit sapiente reprehenderit?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto similique tenetur et est ea placeat, vitae odio sequi qui. Expedita neque, blanditiis illo at accusantium sunt itaque rem necessitatibus alias vel ea voluptatum, nobis amet ut facilis vitae deserunt optio odio obcaecati. Consectetur ipsam asperiores, inventore quam aspernatur neque qui quaerat iure provident numquam voluptatum impedit, consequatur tenetur optio sed maxime? Quas aperiam praesentium earum repellendus quo itaque, ut minus similique fugiat voluptatibus quod architecto recusandae magni rerum doloribus ducimus nulla consequuntur quisquam fuga ipsum assumenda? Id magni blanditiis officiis ratione sed doloremque error nihil, aperiam, suscipit fugit sapiente reprehenderit?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto similique tenetur et est ea placeat, vitae odio sequi qui. Expedita neque, blanditiis illo at accusantium sunt itaque rem necessitatibus alias vel ea voluptatum, nobis amet ut facilis vitae deserunt optio odio obcaecati. Consectetur ipsam asperiores, inventore quam aspernatur neque qui quaerat iure provident numquam voluptatum impedit, consequatur tenetur optio sed maxime? Quas aperiam praesentium earum repellendus quo itaque, ut minus similique fugiat voluptatibus quod architecto recusandae magni rerum doloribus ducimus nulla consequuntur quisquam fuga ipsum assumenda? Id magni blanditiis officiis ratione sed doloremque error nihil, aperiam, suscipit fugit sapiente reprehenderit?
+    </div>
+    {{!-- related products container starts --}}
+</body>
+<script>
+//changing product image ka funda  starts   
+//gallery and product image  elements  
+let galleryImage1Element=document.getElementById("eachImagePositionContainer1"); 
+let galleryImage2Element=document.getElementById("eachImagePositionContainer2"); 
+let galleryImage3Element=document.getElementById("eachImagePositionContainer3"); 
+let galleryImage4Element=document.getElementById("eachImagePositionContainer4"); 
+let galleryImage5Element=document.getElementById("eachImagePositionContainer5"); 
+let productImageElement=document.getElementById("productImage");
+//gallery and product images  
+let galleryImage1=getComputedStyle(galleryImage1Element).backgroundImage; 
+let galleryImage2=getComputedStyle(galleryImage2Element).backgroundImage; 
+let galleryImage3=getComputedStyle(galleryImage3Element).backgroundImage; 
+let galleryImage4=getComputedStyle(galleryImage4Element).backgroundImage; 
+let galleryImage5=getComputedStyle(galleryImage5Element).backgroundImage; 
+let productImage=getComputedStyle(document.getElementById("productImage")).backgroundImage;
+galleryImage1Element.addEventListener("mouseover",function(){
+   productImageElement.style.backgroundImage=galleryImage1;  
+   productImage=galleryImage1;
+})
+galleryImage2Element.addEventListener("mouseover",function(){
+   productImageElement.style.backgroundImage=galleryImage2;  
+   productImage=galleryImage2;
+})
+galleryImage3Element.addEventListener("mouseover",function(){
+   productImageElement.style.backgroundImage=galleryImage3;  
+   productImage=galleryImage3;
+})
+galleryImage4Element.addEventListener("mouseover",function(){
+   productImageElement.style.backgroundImage=galleryImage4;  
+   productImage=galleryImage4;
+})
+galleryImage5Element.addEventListener("mouseover",function(){
+   productImageElement.style.backgroundImage=galleryImage5;  
+   productImage=galleryImage5;
+})
+//changing product image ka funda  ends   
+let productImageZoomerDiv=document.getElementById("productImageZoomerDiv");
+let cursorDiv=document.getElementById("cursorDiv")
+productImageElement.addEventListener("mouseenter",function(){
+productImageElement.addEventListener("mousemove",function(e,i){
+      productImageZoomerDiv.setAttribute("style","display:flex;")
+      let productZoomedImage=document.getElementById("productZoomedImage");
+      let backgroundImageSrc=productImage.slice(5,productImage.length-2)
+      console.log(e.clientY)
+      productZoomedImage.src=backgroundImageSrc;
+      cursorDiv.setAttribute("style",`cursor:pointer;position:absolute;height:50px;width:50px;background-color:grey;border-radius:50%;top:${e.clientY-210}px;left:${e.clientX-146}px`)
+      productZoomedImage.style.transform=`translate3d(-${e.clientX}px,0px,0px)`;
+})
+})
+productImageElement.addEventListener("mouseleave",function(){
+  productImageZoomerDiv.setAttribute("style","display:none;")
+  cursorDiv.setAttribute("style","display:none;");
+})
+
+</script>
+</html>
+
+{{!-- //if((e.clientX>200&&e.clientX<400)&&(e.clientY>200&&e.clientY<500)){ --}}
